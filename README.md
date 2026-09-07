@@ -1,27 +1,23 @@
 # Pradeep Kumar Yenni
 
-I build measurement systems for AI search.
+Data engineer. Four years building production pipelines on Azure and Databricks — the ones that run at 3am and page someone when they don't.
 
-## Answer Share
+I'm now building the layer AI systems need on top of that: retrieval, agent orchestration, and evaluation over real enterprise data rather than clean demo corpora.
 
-[answer-share](https://github.com/pradeepkumaryenni/answer-share) measures which vendors AI assistants actually recommend when buyers ask real purchase questions. First instrumented vertical: veterinary practice management software.
+## Why this direction
 
-Why it exists: Ahrefs measured a [58% drop in click-through rate](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/) for the top-ranking page when Google shows an AI Overview. Pew found that [only 8% of users click any traditional result](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) when an AI summary appears. Software buyers now get shortlisted inside an answer that almost nobody is measuring.
+Most AI applications work beautifully on fifty tidy PDFs and fall apart on a warehouse with schema drift, duplicate keys, late-arriving records and eleven upstream systems that disagree with each other. I've spent four years inside that. The retrieval quality problem and the data quality problem are the same problem wearing different clothes, and very few people arriving from the model side have met the second one.
 
-## How I think about this kind of system
+## What I work with
 
-**Repeat sampling over single reads.** Model output is non-deterministic. One reading is an anecdote, not a trend.
+**In production today** — Python · PySpark · Azure Data Factory · Databricks · Delta Lake · ADLS Gen2 · Event Hubs · Spark Structured Streaming · Snowflake · SQL · Azure DevOps
 
-**Named is not cited.** Models mention brands far more often than they link them, and conflating the two is how these dashboards mislead.
+**Building now** — retrieval over large heterogeneous corpora, LangGraph for multi-step orchestration, evaluation harnesses. A system you can't measure isn't a system, it's a demo.
 
-**Conservative entity matching.** A false positive is worse than a miss when the product *is* the number.
+I'm newer to the model layer than to the data layer, and I'd rather say so than pretend otherwise. Everything I build from here is public and dated, so the trajectory is checkable rather than claimed.
 
-**Integrity gates.** A run above a 5% error rate produces no report at all, because partial data is worse than a late report.
+## Repositories
 
-**Full raw retention.** Every published figure traces back to the text that produced it.
-
-## Day job
-
-Data engineering on Azure: Data Factory, Databricks, PySpark, Delta Lake, SQL and Power BI. Currently at Inventus Info Consulting, previously Tata Consultancy Services.
+Currently being rebuilt. What lands here from now on will have been run before it was published.
 
 [LinkedIn](https://www.linkedin.com/in/yenni-pradeep-kumar/)
